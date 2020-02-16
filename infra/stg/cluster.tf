@@ -8,9 +8,9 @@ resource "digitalocean_kubernetes_cluster" "staging" {
 
   node_pool {
     name       = "worker-pool"
-    size       = "s-2vcpu-2gb"
+    size       = "s-1vcpu-2gb"
     auto_scale = true
-    min_nodes  = 1
+    min_nodes  = 2
     max_nodes  = 5
   }
 }
