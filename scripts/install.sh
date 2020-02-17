@@ -17,6 +17,7 @@ helm upgrade -i flux fluxcd/flux --wait \
 # install flux-helm-operator
 helm upgrade -i helm-operator fluxcd/helm-operator --wait \
 --namespace flux-system \
---set createCRD=true \
+--version=0.7.0 \
+--set createCRD=false \
 --set git.ssh.secretName=flux-git-deploy \
 --set helm.versions=v3
