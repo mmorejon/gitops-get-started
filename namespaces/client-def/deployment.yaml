@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-def
+  labels:
+    name: client-def
+  namespace: client-def
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      name: client-def
+  strategy:
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        name: client-def
+    spec:
+      containers:
+      - image: mmorejon/erase-una-vez-1:0.2.0
+        name: erase-una-vez
+        env:
+          - name: CHARACTER
+            value: "la app DEF."
+          - name: SLEEP_TIME
+            value: "3"
+        resources:
+          requests:
+            memory: "10Mi"
+            cpu: "10m"
+          limits:
+            memory: "100Mi"
+            cpu: "100m"
