@@ -23,6 +23,8 @@ spec:
         env:
           - name: CHARACTER
             value: "la app ABC."
+          - name: SLEEP_TIME
+            value: "3"
         resources:
           requests:
             memory: "10Mi"
