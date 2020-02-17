@@ -1,11 +1,11 @@
 apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
-  name: metrics-server
+  name: kube-state-metrics
   namespace: admin
 spec:
-  releaseName: metrics-server
+  releaseName: kube-state-metrics
   chart:
     repository: https://kubernetes-charts.storage.googleapis.com/
-    name: metrics-server
-    version: 2.9.0
+    name: kube-state-metrics
+    version: 2.6.4
