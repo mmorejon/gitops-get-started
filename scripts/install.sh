@@ -12,7 +12,7 @@ helm upgrade -i flux fluxcd/flux --wait \
 --set git.path=namespaces \
 --set git.pollInterval=5m \
 --set manifestGeneration=false \
---set registry.excludeImage="k8s.gcr.io/*\,index.docker.io/cilium/*"
+--set registry.excludeImage="index.docker.io/*\,quay.io/*\,gcr.io/*"
 
 # install flux-helm-operator
 helm upgrade -i helm-operator fluxcd/helm-operator --wait \
