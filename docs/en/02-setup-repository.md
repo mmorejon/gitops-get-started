@@ -42,4 +42,4 @@ git commit -sm 'Change github repository.'
 git push origin master
 ```
 
-Next: [Setup Digital Ocean and Terraform](03-setup-digital-ocean.md)
+Next: [Setup Digital Ocean](03-setup-digital-ocean.md)
