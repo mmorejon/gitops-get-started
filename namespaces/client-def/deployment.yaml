@@ -22,7 +22,7 @@ spec:
         name: client-def
     spec:
       containers:
-      - image: mmorejon/erase-una-vez-1:0.2.1
+      - image: mmorejon/erase-una-vez-1:0.2.0
         name: erase-una-vez
         env:
         - name: CHARACTER
