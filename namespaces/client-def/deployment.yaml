@@ -4,6 +4,9 @@ metadata:
   name: app-def
   labels:
     name: client-def
+  annotations:
+    fluxcd.io/automated: "true"
+    fluxcd.io/tag.erase-una-vez: semver:~0.2
   namespace: client-def
 spec:
   replicas: 3
