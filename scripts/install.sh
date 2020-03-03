@@ -15,9 +15,10 @@ helm upgrade flux fluxcd/flux --wait \
 --set sync.interval=2m \
 --set manifestGeneration=false \
 --set registry.automationInterval=2m \
---set registry.excludeImage="index.docker.io/*\,quay.io/*\,gcr.io/*" \
+--set registry.excludeImage="quay.io/*\,gcr.io/*" \
 --set syncGarbageCollection.enabled=true \
---set syncGarbageCollection.dry=true
+--set syncGarbageCollection.dry=true \
+--set memcached.hostnameOverride=flux-memcached.flux-system
 
 # install flux-helm-operator
 helm upgrade helm-operator fluxcd/helm-operator --wait \
