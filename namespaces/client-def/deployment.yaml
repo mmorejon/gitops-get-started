@@ -1,3 +1,4 @@
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -21,13 +22,13 @@ spec:
         name: client-def
     spec:
       containers:
-      - image: mmorejon/erase-una-vez-1:0.2.0
+      - image: mmorejon/erase-una-vez-1:0.2.1
         name: erase-una-vez
         env:
-          - name: CHARACTER
-            value: "la app DEF."
-          - name: SLEEP_TIME
-            value: "3"
+        - name: CHARACTER
+          value: "la app DEF."
+        - name: SLEEP_TIME
+          value: "3"
         resources:
           requests:
             memory: "10Mi"
