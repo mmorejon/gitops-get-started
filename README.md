@@ -60,7 +60,7 @@ The following links will guide you in the creation of a Kubernetes cluster using
 * [Tools needed](docs/en/01-client-tools.md)
 * [Setup the repository](docs/en/02-clone-repository.md)
 * [Setup Digital Ocean](docs/en/03-setup-digital-ocean.md)
-* [Setup Terraform Cloud](docs/en/04-setup-do-terraform.md)
+* [Setup Terraform Cloud](docs/en/04-setup-terraform-cloud.md)
 * [Create Kubernetes cluster](docs/en/05-create-cluster.md)
 * [Install Flux CD](docs/en/06-install-fluxcd.md)
 * [Synchronize GitHub <-> Flux CD](docs/en/07-syncronice-github-fluxcd.md)
