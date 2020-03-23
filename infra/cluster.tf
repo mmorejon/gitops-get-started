@@ -3,7 +3,7 @@
 resource "digitalocean_kubernetes_cluster" "staging" {
   name    = "staging"
   region  = "ams3"
-  version = "1.16.6-do.0"
+  version = "1.16.6-do.2"
   tags    = ["staging"]
 
   node_pool {
