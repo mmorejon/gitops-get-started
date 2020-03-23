@@ -48,9 +48,9 @@ Check that there is good communication between the `doctl` client and the platfo
 doctl kubernetes options versions
 
 Slug            Kubernetes Version
-1.16.6-do.0     1.16.6
-1.15.9-do.0     1.15.9
-1.14.10-do.0    1.14.10
+1.16.6-do.2     1.16.6
+1.15.9-do.2     1.15.9
+1.14.10-do.2    1.14.10
 ```
 
 Next: [Setup Terraform Cloud](04-setup-terraform-cloud.md)
