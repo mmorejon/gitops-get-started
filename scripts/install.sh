@@ -27,4 +27,5 @@ helm upgrade helm-operator fluxcd/helm-operator --wait \
 --version=0.7.0 \
 --set createCRD=false \
 --set git.ssh.secretName=flux-git-deploy \
+--set chartsSyncInterval=2m \
 --set helm.versions=v3
