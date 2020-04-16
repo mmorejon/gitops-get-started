@@ -7,7 +7,7 @@ kubectl apply -f namespaces/flux-system/namespace.yaml
 helm upgrade flux fluxcd/flux --wait \
 --install \
 --namespace flux-system \
---version=1.2.0 \
+--version=1.3.0 \
 --set git.url=git@github.com:mmorejon/gitops-get-started \
 --set git.branch=master \
 --set git.path=namespaces \
@@ -15,7 +15,7 @@ helm upgrade flux fluxcd/flux --wait \
 --set sync.interval=2m \
 --set manifestGeneration=false \
 --set registry.automationInterval=2m \
---set registry.excludeImage="quay.io/*\,gcr.io/*" \
+--set registry.includeImage="*/mmorejon/*" \
 --set syncGarbageCollection.enabled=true \
 --set syncGarbageCollection.dry=true \
 --set memcached.hostnameOverride=flux-memcached.flux-system
@@ -24,7 +24,7 @@ helm upgrade flux fluxcd/flux --wait \
 helm upgrade helm-operator fluxcd/helm-operator --wait \
 --install \
 --namespace flux-system \
---version=0.7.0 \
+--version=1.0.1 \
 --set createCRD=false \
 --set git.ssh.secretName=flux-git-deploy \
 --set chartsSyncInterval=2m \
