@@ -17,16 +17,16 @@ Los siguientes pasos le ayudarán a crear un Secret en Kubernetes manteniendo el
 
 `kubeseal` es la herramienta que le permitirá encriptar la información del Secret antes de almacenarlo en el controlador de versiones.
 
-Es necesario tener instalado `kubeseal` en una versión igual o superior a la `v0.11.0`.
+Es necesario tener instalado `kubeseal` en una versión igual o superior a la `v0.12.1`.
 
-Utilice el siguiente enlace para acceder a las instrucciones de la instalación: <https://github.com/bitnami-labs/sealed-secrets/releases/tag/v0.11.0>
+Utilice el siguiente enlace para acceder a las instrucciones de la instalación: <https://github.com/bitnami-labs/sealed-secrets/releases/tag/v0.12.1>
 
 ```bash
 kubeseal --version \
 --controller-namespace=admin \
 --controller-name=sealed-secrets
 
-kubeseal version: v0.11.0
+kubeseal version: v0.12.1
 ```
 
 ## Obtener llave pública

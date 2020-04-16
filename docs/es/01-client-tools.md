@@ -21,14 +21,14 @@ Client Version: version.Info{Major:"1", Minor:"16", GitVersion:"v1.16.3", GitCom
 
 `helm` es la herramienta que le permitirá empaquetar y gestionar las aplicaciones de Kubernetes.
 
-Es necesario tener instalado `helm` en una versión igual o superior a la `v3.0.3`.
+Es necesario tener instalado `helm` en una versión igual o superior a la `v3.1.1`.
 
 Utilice el siguiente enlace para acceder a las instrucciones de la instalación: <https://helm.sh/docs/intro/install/>
 
 ```bash
 helm version
 
-version.BuildInfo{Version:"v3.0.3", GitCommit:"ac925eb7279f4a6955df663a0128044a8a6b7593", GitTreeState:"clean", GoVersion:"go1.13.6"}
+version.BuildInfo{Version:"v3.1.1", GitCommit:"afe70585407b420d0097d07b21c47dc511525ac8", GitTreeState:"clean", GoVersion:"go1.13.8"}
 ```
 
 Agrege el repositorio de Flux CD a los repositorios de Helm
@@ -52,14 +52,14 @@ Update Complete. ⎈ Happy Helming!⎈
 
 `fluxctl` es la herramienta que le permitirá acceder al servicio Flux CD instalado en el cluster de Kubernetes.
 
-Es necesario tener instalado `fluxctl` en una versión igual o superior a la `1.16.0`.
+Es necesario tener instalado `fluxctl` en una versión igual o superior a la `1.19.0`.
 
 Utilice el siguiente enlace para acceder a las instrucciones de la instalación: <https://docs.fluxcd.io/en/1.18.0/references/fluxctl.html#installing-fluxctl>
 
 ```bash
 fluxctl version
 
-1.16.0
+1.19.0
 ```
 
 Siguiente: [Configurar el repositorio](02-setup-repository.md)
