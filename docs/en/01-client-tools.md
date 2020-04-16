@@ -21,14 +21,14 @@ Client Version: version.Info{Major:"1", Minor:"16", GitVersion:"v1.16.3", GitCom
 
 `helm` is the tool that will allow you to package and manage Kubernetes applications.
 
-It is necessary to have `helm` installed in a version equal to or greater than `v3.0.3`.
+It is necessary to have `helm` installed in a version equal to or greater than `v3.1.1`.
 
 Use the following link to access the installation instructions: <https://helm.sh/docs/intro/install/>
 
 ```bash
 helm version
 
-version.BuildInfo{Version:"v3.0.3", GitCommit:"ac925eb7279f4a6955df663a0128044a8a6b7593", GitTreeState:"clean", GoVersion:"go1.13.6"}
+version.BuildInfo{Version:"v3.1.1", GitCommit:"afe70585407b420d0097d07b21c47dc511525ac8", GitTreeState:"clean", GoVersion:"go1.13.8"}
 ```
 
 Add FluxCD repository to Helm repos:
@@ -52,14 +52,14 @@ Update Complete. ⎈ Happy Helming!⎈
 
 `fluxctl` is the tool that will allow you to access the Flux CD service installed in the Kubernetes cluster.
 
-It is necessary to have `fluxctl` installed in a version equal to or greater than `1.16.0`.
+It is necessary to have `fluxctl` installed in a version equal to or greater than `1.19.0`.
 
 Use the following link to access the installation instructions: <https://docs.fluxcd.io/en/1.18.0/references/fluxctl.html#installing-fluxctl>
 
 ```bash
 fluxctl version
 
-1.16.0
+1.19.0
 ```
 
 Next: [Setup the repository](02-setup-repository.md)

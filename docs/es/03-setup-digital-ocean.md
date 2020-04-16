@@ -23,12 +23,12 @@ Al crear el token debe obtener un resultado similar al mostrado en la siguiente 
 
 Utilice el siguiente enlace para instalar `doctl`: <https://github.com/digitalocean/doctl#installing-doctl>
 
-La versión a instalar debe ser igual o mayor a la `1.38.0`.
+La versión a instalar debe ser igual o mayor a la `1.41.0`.
 
 ```bash
 doctl version
 
-doctl version 1.38.0-release
+doctl version 1.41.0-release
 ```
 
 ## Configurar doctl
