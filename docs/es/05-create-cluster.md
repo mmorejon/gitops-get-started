@@ -25,7 +25,7 @@ cat infra/cluster.tf
 resource "digitalocean_kubernetes_cluster" "staging" {
   name    = "staging"
   region  = "ams3"
-  version = "1.16.6-do.2"
+  version = "1.20.2-do.0"
   tags    = ["staging"]
 
   node_pool {
@@ -70,9 +70,9 @@ Compruebe que la configuración se ha realizado correctamente. Liste los nodos d
 ```bash
 kubectl get nodes
 
-NAME               STATUS   ROLES    AGE     VERSION
-worker-pool-0uc4   Ready    <none>   4m43s   v1.16.6
-worker-pool-0uch   Ready    <none>   5m38s   v1.16.6
+NAME                STATUS   ROLES    AGE   VERSION
+worker-pool-8jk9f   Ready    <none>   23m   v1.20.2
+worker-pool-8jk9q   Ready    <none>   23m   v1.20.2
 ```
 
 Siguiente: [Instalar Flux CD](06-install-fluxcd.md)
