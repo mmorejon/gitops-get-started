@@ -1,9 +1,17 @@
+# required provider
+terraform {
+  required_providers {
+    digitalocean = {
+      source = "digitalocean/digitalocean"
+    }
+  }
+}
 
 # kubernetes cluster
 resource "digitalocean_kubernetes_cluster" "staging" {
   name    = "staging"
   region  = "ams3"
-  version = "1.16.6-do.2"
+  version = "1.20.2-do.0"
   tags    = ["staging"]
 
   node_pool {
