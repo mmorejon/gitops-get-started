@@ -9,7 +9,7 @@ helm upgrade flux fluxcd/flux --wait \
 --namespace flux-system \
 --version=1.3.0 \
 --set git.url=git@github.com:mmorejon/gitops-get-started \
---set git.branch=master \
+--set git.branch=main \
 --set git.path=namespaces \
 --set git.pollInterval=5m \
 --set sync.interval=2m \
